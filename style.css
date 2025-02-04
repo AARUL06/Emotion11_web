@@ -106,6 +106,38 @@ input:hover{
     font-size: large;
 }
 
+.insta {
+    position: relative;
+    top: 235px;
+    margin-left: 45px;
+}
+a.card-text {
+    margin: auto;
+    
+    color: rgb(59, 50, 50); /* Text color */
+    text-shadow: 
+        0 0 5px rgb(0, 0, 0),   /* Blue glow */
+        0 0 10px rgb(28, 28, 29),  /* Blue glow */
+        0 0 15px rgb(57, 57, 58);  /* Blue glow */
+    font-size: 30px; /* Font size */
+    text-decoration: none; /* Remove underline */
+}
+.insta .card-text:hover {
+    text-shadow: 
+        0 0 10px #965252,   /* Brighter glow on hover */
+        0 0 20px #884949, 
+        0 0 30px #9A4444; 
+}
+.instagram-logo {
+    width: 60px; /* Adjusted size */
+    transition: transform 0.3s cubic-bezier(0.53, -0.79, 0.78, 1.63);
+    margin-left: 300px; /* Adjusted margin */
+    margin-top: 0;
+}
+.instagram-logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
 .container{
     display: flex;
     justify-content: center; /* Center horizontally */
