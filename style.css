@@ -8,8 +8,12 @@
 body{
     background-color: #FEE1B9;
     cursor: url('icons8-cursor-100.png'), auto;
-    max-width: 100%;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    zoom: 1;  /* Reset any unintended zoom */
+    transform: scale(1);  /* Ensures no scaling is applied */
+    overflow-x: hidden;  /* Prevents horizontal scrolling */
 }
 .logo{
     height: 75px;
