@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business to Business Services</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+
+    .image-container {
+      width: 100%;
+      height: 100vh; /* Full height for laptop/desktop */
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .image-container {
+        height: auto; /* Let image set its height */
+      }
+
+      .image-container img {
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">BUSINESS TO BUSINESS <span>Services</span></h1>
-        <p class="description">LJKJHHHJNJZJCNKUHSDCWCUHWCIUHWUHWCUIEWCIUCUI UCCUCIUHUEWCUCEJUCEWCIUWCHEWCIUEWCIWUCHEWUCH EWDIUEWIWEHD</p>
-        
-        <div class="content">
-            <div class="left">
-                <img src="business.jpg" alt="Business Newspaper">
-                <h2>YOUR VISION<br><span>OUR CREATIVITY</span></h2>
-                <p>HSJHDHDKJHJASDJHASJHKEJILJWLDJKD<br>LHJEHDJEWHJHEWKJDHEWKJDHDJHDJQW<br>HDDDJQHKJDHDHDJASJHD</p>
-            </div>
-            <div class="right">
-                <img src="gift.jpg" alt="Gift Box">
-                <h2>YOUR BUDGET<br><span>OUR CREATION</span></h2>
-                <p>HSJHDHDKJHJASDJHASJHKEJILJWLDJKD<br>LHJEHDJEWHJHEWKJDHEWKJDHDJHDJQW<br>HDDDJQHKJDHDHDJASJHD</p>
-            </div>
-        </div>
-    </div>
+
+  <div class="image-container">
+    <img src="your-image.jpg" alt="Responsive Fullscreen Image" />
+  </div>
+
 </body>
 </html>
 
